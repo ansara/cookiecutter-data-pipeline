@@ -5,3 +5,5 @@
 # JIRA plugin
 atlassian-ide-plugin.xml
 
+# Auto-generated package files
+.mypy_cache/
