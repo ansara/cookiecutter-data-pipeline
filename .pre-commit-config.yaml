@@ -2,7 +2,7 @@ repos:
 
   # Type-Checking
   - repo: https://github.com/sondrelg/pep585-upgrade
-    rev: ab1595ee0aa8823dcda1f0bd95b2c194fcd5362b
+    rev: cc5678ebc6ddf2f1fa17c34d212627474c988e86
     hooks:
       - id: upgrade-type-hints
 
