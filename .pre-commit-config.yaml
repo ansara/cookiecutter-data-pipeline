@@ -2,24 +2,24 @@ repos:
 
   # Type-Checking
   - repo: https://github.com/sondrelg/pep585-upgrade
-    rev: ab1595ee0aa8823dcda1f0bd95b2c194fcd5362b
+    rev: v1
     hooks:
       - id: upgrade-type-hints
 
   - repo: https://github.com/pre-commit/mirrors-mypy
-    rev: v0.910
+    rev: v0.931
     hooks:
       - id: mypy
         additional_dependencies: [ types-all ]
 
   # Security
   - repo: https://github.com/PyCQA/bandit
-    rev: 1.7.0
+    rev: 1.7.1
     hooks:
       - id: bandit
 
   - repo: https://github.com/Lucas-C/pre-commit-hooks-safety
-    rev: v1.2.1
+    rev: v1.2.2
     hooks:
       - id: python-safety-dependencies-check
 
@@ -30,7 +30,7 @@ repos:
       - id: absolufy-imports
 
   - repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v4.0.1
+    rev: v4.1.0
     hooks:
       - id: check-yaml
       - id: check-case-conflict
@@ -41,7 +41,7 @@ repos:
       - id: trailing-whitespace
 
   - repo: https://github.com/pre-commit/mirrors-isort
-    rev: v5.9.3
+    rev: v5.10.1
     hooks:
       - id: isort
 
@@ -52,13 +52,13 @@ repos:
         args: [ --diff, --max-line-length=88 ]
 
   - repo: https://github.com/psf/black
-    rev: 21.7b0
+    rev: 21.12b0
     hooks:
       - id: black
         args: [ --diff, --line-length=88 ]
 
   - repo: https://github.com/asottile/setup-cfg-fmt
-    rev: v1.17.0
+    rev: v1.20.0
     hooks:
       - id: setup-cfg-fmt
 
@@ -72,7 +72,7 @@ repos:
 
   # Cloud Infrastructure
   - repo: git://github.com/antonbabenko/pre-commit-terraform
-    rev: v1.50.0
+    rev: v1.62.3
     hooks:
       - id: terraform_fmt
       - id: terraform_validate
